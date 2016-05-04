@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
@@ -213,7 +213,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Болел бронхитом 4 месяца назад.</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">

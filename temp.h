@@ -2,6 +2,7 @@
 #define TEMP_H
 
 #include <QDialog>
+#include <nf4.h>
 
 
 namespace Ui {
@@ -16,11 +17,17 @@ public:
     explicit temp(QWidget *parent = 0);
     ~temp();
 
+signals:
+    void closed();
+
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_4_clicked();
+
 private:
     Ui::temp *ui;
+    nf4 *n4;
 
 };
 

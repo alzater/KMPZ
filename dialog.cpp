@@ -9,7 +9,6 @@ Dialog::Dialog(QWidget *parent) :
     d1 = new Dialog1();
     n1 = new nf();
     vr = new temp();
-
 }
 
 Dialog::~Dialog()
@@ -26,11 +25,17 @@ void Dialog::on_pushButton_clicked()
 void Dialog::on_pushButton_3_clicked()
 {
     n1->show();
-    this->close();
+
 }
 
 void Dialog::on_pushButton_4_clicked()
 {
     vr->show();
-    this->close();
+
+}
+
+void Dialog::on_pushButton_2_clicked()
+{
+   QString m = ui->lineEdit->text();
+   ui->label_2->setText(m);
 }

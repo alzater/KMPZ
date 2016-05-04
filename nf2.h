@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::nf2 *ui;
-    nf3 * n3;
+    nf3 *n3;
 };
 
 #endif // NF2_H
