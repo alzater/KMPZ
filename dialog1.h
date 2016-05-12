@@ -18,10 +18,12 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void openform();
 
 private:
     Ui::Dialog1 *ui;
     Dialog2 *d2;
+    Dialog1 *d1;
 };
 
 #endif // DIALOG1_H

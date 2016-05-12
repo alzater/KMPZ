@@ -84,6 +84,9 @@ p, li { white-space: pre-wrap; }
      <height>20</height>
     </rect>
    </property>
+   <property name="text">
+    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -120,6 +123,16 @@ p, li { white-space: pre-wrap; }
      <height>22</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Болел бронхитом 4 месяца назад</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Месяц</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

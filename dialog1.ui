@@ -38,6 +38,9 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="text">
+    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
@@ -60,6 +63,9 @@
      <width>281</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>Болел бронхитом 4 месяца назад</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">

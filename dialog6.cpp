@@ -18,11 +18,11 @@ Dialog6::~Dialog6()
 void Dialog6::on_pushButton_3_clicked()
 {
     n1->show();
-    this->close();
+
 }
 
 void Dialog6::on_pushButton_4_clicked()
 {
     vr->show();
-    this->close();
+
 }

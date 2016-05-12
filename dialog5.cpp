@@ -19,3 +19,8 @@ void Dialog5::on_pushButton_clicked()
     d6->show();
     this->close();
 }
+
+void Dialog5::on_pushButton_3_clicked()
+{
+    this->close();
+}

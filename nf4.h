@@ -15,6 +15,11 @@ public:
     explicit nf4(QWidget *parent = 0);
     ~nf4();
 
+private slots:
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
+
 private:
     Ui::nf4 *ui;
 };

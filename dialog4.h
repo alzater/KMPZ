@@ -2,7 +2,7 @@
 #define DIALOG4_H
 
 #include <QDialog>
-#include <dialog5.h>
+#include <Dialog5.h>
 
 
 namespace Ui {
