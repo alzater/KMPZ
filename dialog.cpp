@@ -30,8 +30,8 @@ void Dialog::on_pushButton_3_clicked()
 
 void Dialog::on_pushButton_4_clicked()
 {
+    vr->init( ui->lineEdit->text().toStdString(), ui->lineEdit_2->text().toStdString() );
     vr->show();
-
 }
 
 void Dialog::on_pushButton_2_clicked()
