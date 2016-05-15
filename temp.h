@@ -27,6 +27,10 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_Binput_clicked();
+
+    void on_Binstruments_clicked();
+
 private:
     std::string findBegins(std::string str);
     std::string findEnds(std::string str);

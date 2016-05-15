@@ -29,7 +29,7 @@
     <enum>Qt::RichText</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="question">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+    <string/>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser">
@@ -65,7 +65,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Сформулируйте понятие, используемое Вами в опросе, которое Вы оцениваете качественно в ответе:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="ocenka_voprosa">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -150,7 +150,7 @@ p, li { white-space: pre-wrap; }
     <string>)</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="edIzmereniya">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -160,7 +160,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="OblastOpred1">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -170,7 +170,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="OblastOpred2">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Если Вы затрудняетесь ввести область определения данного параметра, то оставьте значение по умолчанию&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_6">
+  <widget class="QLineEdit" name="answer">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -213,7 +213,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Болел бронхитом 4 месяца назад.</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
@@ -255,7 +255,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Для определения типа  введенного Вами в ответе значения, отметье один из наиболее подходящих комментариев к вашему ответу&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton">
+  <widget class="QRadioButton" name="type1">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -274,7 +274,7 @@ p, li { white-space: pre-wrap; }
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton_2">
+  <widget class="QRadioButton" name="type2">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -296,7 +296,7 @@ p, li { white-space: pre-wrap; }
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton_3">
+  <widget class="QRadioButton" name="type3">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -407,7 +407,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Для просмотра найденных нечетких понятий и их значений, нажмите кнопку &amp;quot;Отобразить&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Bhelp">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -420,7 +420,7 @@ p, li { white-space: pre-wrap; }
     <string>Справка</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Botobrazhit">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -433,7 +433,7 @@ p, li { white-space: pre-wrap; }
     <string>Отобразить</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="Binput">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -446,7 +446,7 @@ p, li { white-space: pre-wrap; }
     <string>Ввести</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="Bskip">
    <property name="geometry">
     <rect>
      <x>400</x>

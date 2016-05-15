@@ -22,6 +22,10 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_Binstruments_clicked();
+
+    void on_BtempInfo_clicked();
+
 private:
     Ui::Dialog6 *ui;
     nf *n1;

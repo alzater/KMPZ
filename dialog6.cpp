@@ -17,12 +17,22 @@ Dialog6::~Dialog6()
 
 void Dialog6::on_pushButton_3_clicked()
 {
-    n1->show();
+
 
 }
 
 void Dialog6::on_pushButton_4_clicked()
 {
-    vr->show();
 
+
+}
+
+void Dialog6::on_Binstruments_clicked()
+{
+    n1->show();
+}
+
+void Dialog6::on_BtempInfo_clicked()
+{
+   vr->show();
 }

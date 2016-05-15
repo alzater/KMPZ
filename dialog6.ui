@@ -72,7 +72,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Выберите из списка ответов или введите новый возможный вариант ответа пациента на данный вопрос&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Bdalee">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -85,7 +85,7 @@ p, li { white-space: pre-wrap; }
     <string>Далее</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Bvisual">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -98,7 +98,7 @@ p, li { white-space: pre-wrap; }
     <string>Визуализировать</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBox_answer">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -107,13 +107,8 @@ p, li { white-space: pre-wrap; }
      <height>22</height>
     </rect>
    </property>
-   <item>
-    <property name="text">
-     <string>Болел бронхитом 4 месяца назад</string>
-    </property>
-   </item>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="Binstruments">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -198,7 +193,7 @@ p, li { white-space: pre-wrap; }
     <string>Ответ:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="question">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -208,7 +203,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+    <string/>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_5">
@@ -234,7 +229,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Если Вы хотите ввести временные характеристики, воспользуйтесь кнопкой &amp;quot;Временная информация&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="BtempInfo">
    <property name="geometry">
     <rect>
      <x>50</x>

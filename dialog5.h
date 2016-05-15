@@ -21,6 +21,10 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_Bno_clicked();
+
+    void on_Byes_clicked();
+
 private:
     Ui::Dialog5 *ui;
     Dialog6 *d6;

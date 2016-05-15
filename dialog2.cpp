@@ -16,6 +16,11 @@ Dialog2::~Dialog2()
 
 void Dialog2::on_pushButton_clicked()
 {
+
+}
+
+void Dialog2::on_Binput_clicked()
+{
     d3->show();
     this->close();
 }

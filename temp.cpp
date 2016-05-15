@@ -20,45 +20,44 @@ temp::~temp()
 
 void temp::init( std::string question, std::string answer )
 {
-    ui->lineEdit_5->setText(QString(question.c_str()));
-    ui->lineEdit_4->setText(QString(answer.c_str()));
+    ui->question->setText(QString(question.c_str()));
+    ui->answer->setText(QString(answer.c_str()));
 
     std::string tmp;
 
     tmp = findBegins(question);
     if ( !tmp.empty() )
-        ui->lineEdit_6->setText(tmp.c_str());
+        ui->start_question->setText(tmp.c_str());
 
     tmp = findDurance(question);
     if ( !tmp.empty() )
-        ui->lineEdit_7->setText(tmp.c_str());
+        ui->duration_question->setText(tmp.c_str());
 
     tmp = findEnds(question);
     if ( !tmp.empty() )
-        ui->lineEdit_8->setText(tmp.c_str());
+        ui->finish_question->setText(tmp.c_str());
 
     tmp = findBegins(answer);
     if ( !tmp.empty() )
-        ui->lineEdit->setText(tmp.c_str());
+        ui->start_answer->setText(tmp.c_str());
 
     tmp = findDurance(answer);
     if ( !tmp.empty() )
-        ui->lineEdit_2->setText(tmp.c_str());
+        ui->duration_answer->setText(tmp.c_str());
 
     tmp = findEnds(answer);
     if ( !tmp.empty() )
-        ui->lineEdit_3->setText(tmp.c_str());
+        ui->finish_answer->setText(tmp.c_str());
 }
 
 void temp::on_pushButton_clicked()
 {
-    emit closed();
-    this->close();
+
 }
 
 void temp::on_pushButton_4_clicked()
 {
-   n4->show();
+
 }
 
 std::string temp::findBegins(std::string str)
@@ -92,4 +91,15 @@ std::string temp::findEnds(std::string str)
             return frase;
     }
     return "";
+}
+
+void temp::on_Binput_clicked()
+{
+    emit closed();
+    this->close();
+}
+
+void temp::on_Binstruments_clicked()
+{
+    n4->show();
 }

@@ -17,8 +17,7 @@ Dialog1::~Dialog1()
 
 void Dialog1::on_pushButton_clicked()
 {
-    d2->show();
-    this->close();
+
 }
 
 void Dialog1::openform()
@@ -26,3 +25,14 @@ void Dialog1::openform()
     this->show();
 }
 
+
+void Dialog1::on_Bno_clicked()
+{
+
+}
+
+void Dialog1::on_Byes_clicked()
+{
+    d2->show();
+    this->close();
+}
