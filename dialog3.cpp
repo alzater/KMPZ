@@ -23,14 +23,22 @@ void Dialog3::on_pushButton_clicked()
 }
 
 void Dialog3::on_pushButton_4_clicked()
-{
-    n1->show();
+{}
 
-}
 
 void Dialog3::on_pushButton_5_clicked()
 {
-    vr->show();
+
 
 }
 
+
+void Dialog3::on_Binstruments_clicked()
+{
+    n1->show();
+}
+
+void Dialog3::on_BtempInfo_clicked()
+{
+     vr->show();
+}

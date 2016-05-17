@@ -18,24 +18,44 @@ Dialog::~Dialog()
 
 void Dialog::on_pushButton_clicked()
 {
- d1->show();
- this->close();
+
 }
 
 void Dialog::on_pushButton_3_clicked()
 {
-    n1->show();
+
 
 }
 
 void Dialog::on_pushButton_4_clicked()
 {
-    vr->show();
 
 }
 
 void Dialog::on_pushButton_2_clicked()
 {
-   QString m = ui->lineEdit->text();
-   ui->label_2->setText(m);
+
+}
+
+void Dialog::on_Binstruments_clicked()
+{
+    n1->show();
+}
+
+void Dialog::on_BtempInfo_clicked()
+{
+    vr->init( ui->question->text().toStdString(), ui->answer->text().toStdString() );
+    vr->show();
+}
+
+void Dialog::on_Bdalee_clicked()
+{
+    d1->show();
+    this->close();
+}
+
+void Dialog::on_Bvisual_clicked()
+{
+    QString m = ui->question->text();
+    ui->label_2->setText(m);
 }

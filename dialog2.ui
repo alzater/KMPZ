@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Ввод учетной информации объекта исследования</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Binput">
    <property name="geometry">
     <rect>
      <x>490</x>
@@ -26,7 +26,7 @@
     <string>Ввести</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Bvisual">
    <property name="geometry">
     <rect>
      <x>490</x>
@@ -75,7 +75,7 @@ p, li { white-space: pre-wrap; }
     <string>Пол</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_sex">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -98,7 +98,7 @@ p, li { white-space: pre-wrap; }
     <string>Профессиональная вредность</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBox_profVrednost">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -121,7 +121,7 @@ p, li { white-space: pre-wrap; }
     <string>Осложнения перенесенных заболеваний</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_3">
+  <widget class="QComboBox" name="comboBox_oslozhneniya">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -144,7 +144,7 @@ p, li { white-space: pre-wrap; }
     <string>Перенесенные заболевания</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_5">
+  <widget class="QComboBox" name="comboBox_perenesZabol">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -167,7 +167,7 @@ p, li { white-space: pre-wrap; }
     <string>Взраст пациента</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_4">
+  <widget class="QComboBox" name="comboBox_age">
    <property name="geometry">
     <rect>
      <x>220</x>

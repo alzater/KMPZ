@@ -19,6 +19,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_Binput_clicked();
+
 private:
     Ui::Dialog2 *ui;
     Dialog3 *d3;

@@ -20,12 +20,21 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    d->show();
-    this->close();
-}
 
+}
 
 void MainWindow::on_pushButton_2_clicked()
 {
 
+}
+
+void MainWindow::on_BnewWords_clicked()
+{
+
+}
+
+void MainWindow::on_Bdalee_clicked()
+{
+    d->show();
+    this->close();
 }

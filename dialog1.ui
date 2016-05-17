@@ -29,7 +29,7 @@
     <enum>Qt::RichText</enum>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="question">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -39,10 +39,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Bvisual">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -55,7 +55,7 @@
     <string>Визуализировать</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="answer">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -65,10 +65,10 @@
     </rect>
    </property>
    <property name="text">
-    <string>Болел бронхитом 4 месяца назад</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="Bno">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -114,7 +114,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Можете ли Вы сделать заключение о состоянии пациента?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Byes">
    <property name="geometry">
     <rect>
      <x>370</x>

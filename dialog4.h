@@ -2,7 +2,7 @@
 #define DIALOG4_H
 
 #include <QDialog>
-#include <Dialog5.h>
+#include <dialog5.h>
 
 
 namespace Ui {
@@ -19,6 +19,10 @@ public:
 
 private slots:
     void on_pushButton_3_clicked();
+
+    void on_Byes_clicked();
+
+    void on_Bno_clicked();
 
 private:
     Ui::Dialog4 *ui;

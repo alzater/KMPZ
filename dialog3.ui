@@ -111,7 +111,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Если Вы не уверены в достоверности введенной информации, то можете воспользоваться кнопкой &amp;quot;Инструменты&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="Binstruments">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -124,7 +124,7 @@ p, li { white-space: pre-wrap; }
     <string>Инструменты</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="conclusion">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -157,7 +157,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Если Вы хотите ввести временные характеристики, воспользуйтесь кнопкой &amp;quot;Временная информация&amp;quot;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="BtempInfo">
    <property name="geometry">
     <rect>
      <x>10</x>

@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="Bno">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -26,7 +26,7 @@
     <string>Нет</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="question">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Болели ли вы болезнями связанными с воспалением бронхов за последние пол года?</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -55,7 +55,7 @@
     <enum>Qt::RichText</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="Bvisual">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -68,7 +68,7 @@
     <string>Визуализировать</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Byes">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -81,7 +81,7 @@
     <string>Да</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_answers">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -90,11 +90,6 @@
      <height>22</height>
     </rect>
    </property>
-   <item>
-    <property name="text">
-     <string>Болел бронхитом 4 месяца назад</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">

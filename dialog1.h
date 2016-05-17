@@ -20,6 +20,10 @@ private slots:
     void on_pushButton_clicked();
     void openform();
 
+    void on_Bno_clicked();
+
+    void on_Byes_clicked();
+
 private:
     Ui::Dialog1 *ui;
     Dialog2 *d2;

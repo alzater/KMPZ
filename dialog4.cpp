@@ -16,6 +16,16 @@ Dialog4::~Dialog4()
 
 void Dialog4::on_pushButton_3_clicked()
 {
+
+}
+
+void Dialog4::on_Byes_clicked()
+{
+
+}
+
+void Dialog4::on_Bno_clicked()
+{
     d5->show();
     this->close();
 }
