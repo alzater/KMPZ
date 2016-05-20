@@ -1,37 +1,37 @@
 #include "dialog1.h"
 #include "ui_dialog1.h"
 
-Dialog1::Dialog1(QWidget *parent) :
+definition_ability_conclusion_form :: definition_ability_conclusion_form(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog1)
+    ui(new Ui::definition_ability_conclusion_form)
 {
     ui->setupUi(this);
     d2 = new Dialog2();
    // connect (temp::on_pushButton_clicked(), SIGNAL(closed()), this, SLOT(openform()));
 }
 
-Dialog1::~Dialog1()
+definition_ability_conclusion_form::~definition_ability_conclusion_form()
 {
     delete ui;
 }
 
-void Dialog1::on_pushButton_clicked()
+void definition_ability_conclusion_form::on_pushButton_clicked()
 {
 
 }
 
-void Dialog1::openform()
+void definition_ability_conclusion_form::openform()
 {
     this->show();
 }
 
 
-void Dialog1::on_Bno_clicked()
+void definition_ability_conclusion_form::on_Bno_clicked()
 {
 
 }
 
-void Dialog1::on_Byes_clicked()
+void definition_ability_conclusion_form::on_Byes_clicked()
 {
     d2->show();
     this->close();

@@ -28,7 +28,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Dialog *d;
+    answer_question_form *d;
 
 
 

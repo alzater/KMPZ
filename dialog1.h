@@ -5,16 +5,16 @@
 #include <dialog2.h>
 
 namespace Ui {
-class Dialog1;
+class definition_ability_conclusion_form;
 }
 
-class Dialog1 : public QDialog
+class definition_ability_conclusion_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog1(QWidget *parent = 0);
-    ~Dialog1();
+    explicit definition_ability_conclusion_form(QWidget *parent = 0);
+    ~definition_ability_conclusion_form();
 
 private slots:
     void on_pushButton_clicked();
@@ -25,9 +25,9 @@ private slots:
     void on_Byes_clicked();
 
 private:
-    Ui::Dialog1 *ui;
+    Ui::definition_ability_conclusion_form *ui;
     Dialog2 *d2;
-    Dialog1 *d1;
+    definition_ability_conclusion_form *d1;
 };
 
 #endif // DIALOG1_H

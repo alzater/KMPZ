@@ -2,6 +2,7 @@
 #include "ui_temp.h"
 
 #include <vector>
+using namespace std;
 
 temp::temp(QWidget *parent) :
     QDialog(parent),
@@ -18,7 +19,7 @@ temp::~temp()
     delete ui;
 }
 
-void temp::init( std::string question, std::string answer )
+void temp::init( string question, string answer )
 {
     ui->question->setText(QString(question.c_str()));
     ui->answer->setText(QString(answer.c_str()));
@@ -103,3 +104,4 @@ void temp::on_Binstruments_clicked()
 {
     n4->show();
 }
+

@@ -9,20 +9,20 @@
 
 
 namespace Ui {
-class Dialog;
+class answer_question_form;
 }
 
-class Dialog : public QDialog
+class answer_question_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog(QWidget *parent = 0);
-    ~Dialog();
+    explicit answer_question_form(QWidget *parent = 0);
+    ~answer_question_form();
 
 private:
-    Ui::Dialog *ui;
-    Dialog1 *d1;
+    Ui::answer_question_form *ui;
+    definition_ability_conclusion_form *d1;
     nf *n1;
     temp *vr;
 

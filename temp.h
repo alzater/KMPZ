@@ -5,6 +5,8 @@
 #include <nf4.h>
 
 
+using namespace std;
+
 namespace Ui {
 class temp;
 }
@@ -38,6 +40,22 @@ private:
 private:
     Ui::temp *ui;
     nf4 *n4;
+};
+
+class time
+{
+public:
+    string start;
+    string finish;
+    string duration;
+    string period;
+private:
+};
+
+class unixtime
+{
+public:
+    double time;
 };
 
 #endif // TEMP_H
