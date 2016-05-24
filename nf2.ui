@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>nf2</class>
- <widget class="QDialog" name="nf2">
+ <class>NFerrorForm</class>
+ <widget class="QDialog" name="NFerrorForm">
   <property name="geometry">
    <rect>
     <x>0</x>

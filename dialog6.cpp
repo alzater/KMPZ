@@ -1,38 +1,38 @@
 #include "dialog6.h"
 #include "ui_dialog6.h"
 
-Dialog6::Dialog6(QWidget *parent) :
+another_answerFORtheQUESTION_form2::another_answerFORtheQUESTION_form2(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog6)
+    ui(new Ui::another_answerFORtheQUESTION_form2)
 {
     ui->setupUi(this);
-    n1 = new nf();
+    n1 = new NFquantitativeAnswerForm();
     vr = new temp();
 }
 
-Dialog6::~Dialog6()
+another_answerFORtheQUESTION_form2::~another_answerFORtheQUESTION_form2()
 {
     delete ui;
 }
 
-void Dialog6::on_pushButton_3_clicked()
+void another_answerFORtheQUESTION_form2::on_pushButton_3_clicked()
 {
 
 
 }
 
-void Dialog6::on_pushButton_4_clicked()
+void another_answerFORtheQUESTION_form2::on_pushButton_4_clicked()
 {
 
 
 }
 
-void Dialog6::on_Binstruments_clicked()
+void another_answerFORtheQUESTION_form2::on_Binstruments_clicked()
 {
     n1->show();
 }
 
-void Dialog6::on_BtempInfo_clicked()
+void another_answerFORtheQUESTION_form2::on_BtempInfo_clicked()
 {
    vr->show();
 }

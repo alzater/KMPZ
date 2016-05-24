@@ -1,21 +1,21 @@
 #include "nf3.h"
 #include "ui_nf3.h"
 
-nf3::nf3(QWidget *parent) :
+NFconfidenceForm::NFconfidenceForm(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::nf3)
+    ui(new Ui::NFconfidenceForm)
 {
     ui->setupUi(this);
-    n4 = new nf4();
+//    n4 = new nf4();
 }
 
-nf3::~nf3()
+NFconfidenceForm::~NFconfidenceForm()
 {
     delete ui;
 }
 
-void nf3::on_pushButton_6_clicked()
+void NFconfidenceForm::on_pushButton_6_clicked()
 {
-    n4->show();
+//    n4->show();
     this->close();
 }

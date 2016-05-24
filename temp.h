@@ -39,7 +39,7 @@ private:
     std::string findDurance(std::string str);
 private:
     Ui::temp *ui;
-    nf4 *n4;
+    NFmainForm *n4;
 };
 
 class time

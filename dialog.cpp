@@ -7,7 +7,7 @@ answer_question_form::answer_question_form(QWidget *parent) :
 {
     ui->setupUi(this);
     d1 = new definition_ability_conclusion_form();
-    n1 = new nf();
+    n1 = new NFquantitativeAnswerForm();
     vr = new temp();
 }
 

@@ -7,16 +7,16 @@
 #include <temp.h>
 
 namespace Ui {
-class Dialog3;
+class conclusion_form;
 }
 
-class Dialog3 : public QDialog
+class conclusion_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog3(QWidget *parent = 0);
-    ~Dialog3();
+    explicit conclusion_form(QWidget *parent = 0);
+    ~conclusion_form();
 
 private slots:
     void on_pushButton_clicked();
@@ -30,9 +30,9 @@ private slots:
     void on_BtempInfo_clicked();
 
 private:
-    Ui::Dialog3 *ui;
-    Dialog4 *d4;
-    nf *n1;
+    Ui::conclusion_form *ui;
+    another_conclusion_form *d4;
+    NFquantitativeAnswerForm *n1;
     temp * vr;
 };
 

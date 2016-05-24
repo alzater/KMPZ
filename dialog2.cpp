@@ -1,25 +1,25 @@
 #include "dialog2.h"
 #include "ui_dialog2.h"
 
-Dialog2::Dialog2(QWidget *parent) :
+patient_info_form::patient_info_form(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog2)
+    ui(new Ui::patient_info_form)
 {
     ui->setupUi(this);
-    d3 = new Dialog3();
+    d3 = new conclusion_form();
 }
 
-Dialog2::~Dialog2()
+patient_info_form::~patient_info_form()
 {
     delete ui;
 }
 
-void Dialog2::on_pushButton_clicked()
+void patient_info_form::on_pushButton_clicked()
 {
 
 }
 
-void Dialog2::on_Binput_clicked()
+void patient_info_form::on_Binput_clicked()
 {
     d3->show();
     this->close();

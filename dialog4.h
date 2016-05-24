@@ -6,16 +6,16 @@
 
 
 namespace Ui {
-class Dialog4;
+class another_conclusion_form;
 }
 
-class Dialog4 : public QDialog
+class another_conclusion_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog4(QWidget *parent = 0);
-    ~Dialog4();
+    explicit another_conclusion_form(QWidget *parent = 0);
+    ~another_conclusion_form();
 
 private slots:
     void on_pushButton_3_clicked();
@@ -25,8 +25,8 @@ private slots:
     void on_Bno_clicked();
 
 private:
-    Ui::Dialog4 *ui;
-    Dialog5 *d5;
+    Ui::another_conclusion_form *ui;
+    another_answerFORtheQUESTION_form *d5;
 
 };
 

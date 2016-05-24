@@ -5,23 +5,23 @@
 #include <nf4.h>
 
 namespace Ui {
-class nf3;
+class NFconfidenceForm;
 }
 
-class nf3 : public QDialog
+class NFconfidenceForm : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit nf3(QWidget *parent = 0);
-    ~nf3();
+    explicit NFconfidenceForm(QWidget *parent = 0);
+    ~NFconfidenceForm();
 
 private slots:
     void on_pushButton_6_clicked();
 
 private:
-    Ui::nf3 *ui;
-    nf4 *n4;
+    Ui::NFconfidenceForm *ui;
+//    nf4 *n4;
 };
 
 #endif // NF3_H

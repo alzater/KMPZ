@@ -1,35 +1,35 @@
 #include "dialog5.h"
 #include "ui_dialog5.h"
 
-Dialog5::Dialog5(QWidget *parent) :
+another_answerFORtheQUESTION_form::another_answerFORtheQUESTION_form(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog5)
+    ui(new Ui::another_answerFORtheQUESTION_form)
 {
     ui->setupUi(this);
-    d6 = new Dialog6();
+    d6 = new another_answerFORtheQUESTION_form2();
 }
 
-Dialog5::~Dialog5()
+another_answerFORtheQUESTION_form::~another_answerFORtheQUESTION_form()
 {
     delete ui;
 }
 
-void Dialog5::on_pushButton_clicked()
+void another_answerFORtheQUESTION_form::on_pushButton_clicked()
 {
 
 }
 
-void Dialog5::on_pushButton_3_clicked()
+void another_answerFORtheQUESTION_form::on_pushButton_3_clicked()
 {
     this->close();
 }
 
-void Dialog5::on_Bno_clicked()
+void another_answerFORtheQUESTION_form::on_Bno_clicked()
 {
 
 }
 
-void Dialog5::on_Byes_clicked()
+void another_answerFORtheQUESTION_form::on_Byes_clicked()
 {
     d6->show();
     this->close();

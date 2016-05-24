@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>nf</class>
- <widget class="QDialog" name="nf">
+ <class>NFquantitativeAnswerForm</class>
+ <widget class="QDialog" name="NFquantitativeAnswerForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -73,6 +73,9 @@ p, li { white-space: pre-wrap; }
      <width>311</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_2">

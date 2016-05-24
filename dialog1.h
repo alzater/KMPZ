@@ -26,7 +26,7 @@ private slots:
 
 private:
     Ui::definition_ability_conclusion_form *ui;
-    Dialog2 *d2;
+    patient_info_form *d2;
     definition_ability_conclusion_form *d1;
 };
 

@@ -23,7 +23,7 @@ public:
 private:
     Ui::answer_question_form *ui;
     definition_ability_conclusion_form *d1;
-    nf *n1;
+    NFquantitativeAnswerForm *n1;
     temp *vr;
 
 

@@ -6,7 +6,7 @@ definition_ability_conclusion_form :: definition_ability_conclusion_form(QWidget
     ui(new Ui::definition_ability_conclusion_form)
 {
     ui->setupUi(this);
-    d2 = new Dialog2();
+    d2 = new patient_info_form();
    // connect (temp::on_pushButton_clicked(), SIGNAL(closed()), this, SLOT(openform()));
 }
 

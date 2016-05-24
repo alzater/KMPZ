@@ -1,20 +1,20 @@
 #include "nf.h"
 #include "ui_nf.h"
 
-nf::nf(QWidget *parent) :
+NFquantitativeAnswerForm::NFquantitativeAnswerForm(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::nf)
+    ui(new Ui::NFquantitativeAnswerForm)
 {
     ui->setupUi(this);
-    n2 = new nf2();
+    n2 = new NFerrorForm();
 }
 
-nf::~nf()
+NFquantitativeAnswerForm::~NFquantitativeAnswerForm()
 {
     delete ui;
 }
 
-void nf::on_pushButton_3_clicked()
+void NFquantitativeAnswerForm::on_pushButton_3_clicked()
 {
     n2->show();
     this->close();

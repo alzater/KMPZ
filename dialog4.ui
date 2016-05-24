@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog4</class>
- <widget class="QDialog" name="Dialog4">
+ <class>another_conclusion_form</class>
+ <widget class="QDialog" name="another_conclusion_form">
   <property name="geometry">
    <rect>
     <x>0</x>

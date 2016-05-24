@@ -5,16 +5,16 @@
 #include <dialog3.h>
 
 namespace Ui {
-class Dialog2;
+class patient_info_form;
 }
 
-class Dialog2 : public QDialog
+class patient_info_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog2(QWidget *parent = 0);
-    ~Dialog2();
+    explicit patient_info_form(QWidget *parent = 0);
+    ~patient_info_form();
 
 private slots:
     void on_pushButton_clicked();
@@ -22,8 +22,8 @@ private slots:
     void on_Binput_clicked();
 
 private:
-    Ui::Dialog2 *ui;
-    Dialog3 *d3;
+    Ui::patient_info_form *ui;
+    conclusion_form *d3;
 };
 
 #endif // DIALOG2_H

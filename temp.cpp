@@ -11,7 +11,7 @@ temp::temp(QWidget *parent) :
     ui->setupUi(this);
      QPushButton *but_1 = new QPushButton(this);
     connect(but_1, &QPushButton::clicked, this, &temp::on_pushButton_clicked);
-    n4= new nf4();
+    n4= new NFmainForm();
 }
 
 temp::~temp()

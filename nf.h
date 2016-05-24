@@ -5,23 +5,23 @@
 #include <nf2.h>
 
 namespace Ui {
-class nf;
+class NFquantitativeAnswerForm;
 }
 
-class nf : public QDialog
+class NFquantitativeAnswerForm : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit nf(QWidget *parent = 0);
-    ~nf();
+    explicit NFquantitativeAnswerForm(QWidget *parent = 0);
+    ~NFquantitativeAnswerForm();
 
 private slots:
     void on_pushButton_3_clicked();
 
 private:
-    Ui::nf *ui;
-    nf2 *n2;
+    Ui::NFquantitativeAnswerForm *ui;
+    NFerrorForm *n2;
 };
 
 #endif // NF_H

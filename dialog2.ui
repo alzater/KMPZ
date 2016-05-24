@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog2</class>
- <widget class="QDialog" name="Dialog2">
+ <class>patient_info_form</class>
+ <widget class="QDialog" name="patient_info_form">
   <property name="geometry">
    <rect>
     <x>0</x>

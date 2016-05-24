@@ -5,16 +5,16 @@
 #include <dialog6.h>
 
 namespace Ui {
-class Dialog5;
+class another_answerFORtheQUESTION_form;
 }
 
-class Dialog5 : public QDialog
+class another_answerFORtheQUESTION_form : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog5(QWidget *parent = 0);
-    ~Dialog5();
+    explicit another_answerFORtheQUESTION_form(QWidget *parent = 0);
+    ~another_answerFORtheQUESTION_form();
 
 private slots:
     void on_pushButton_clicked();
@@ -26,8 +26,8 @@ private slots:
     void on_Byes_clicked();
 
 private:
-    Ui::Dialog5 *ui;
-    Dialog6 *d6;
+    Ui::another_answerFORtheQUESTION_form *ui;
+    another_answerFORtheQUESTION_form2 *d6;
 };
 
 #endif // DIALOG5_H

@@ -1,44 +1,44 @@
 #include "dialog3.h"
 #include "ui_dialog3.h"
 
-Dialog3::Dialog3(QWidget *parent) :
+conclusion_form::conclusion_form(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog3)
+    ui(new Ui::conclusion_form)
 {
     ui->setupUi(this);
-    d4 = new Dialog4();
-    n1 = new nf();
+    d4 = new another_conclusion_form();
+    n1 = new NFquantitativeAnswerForm();
     vr =  new temp();
 }
 
-Dialog3::~Dialog3()
+conclusion_form::~conclusion_form()
 {
     delete ui;
 }
 
-void Dialog3::on_pushButton_clicked()
+void conclusion_form::on_pushButton_clicked()
 {
     d4->show();
     this->close();
 }
 
-void Dialog3::on_pushButton_4_clicked()
+void conclusion_form::on_pushButton_4_clicked()
 {}
 
 
-void Dialog3::on_pushButton_5_clicked()
+void conclusion_form::on_pushButton_5_clicked()
 {
 
 
 }
 
 
-void Dialog3::on_Binstruments_clicked()
+void conclusion_form::on_Binstruments_clicked()
 {
     n1->show();
 }
 
-void Dialog3::on_BtempInfo_clicked()
+void conclusion_form::on_BtempInfo_clicked()
 {
      vr->show();
 }

@@ -1,30 +1,30 @@
 #include "dialog4.h"
 #include "ui_dialog4.h"
 
-Dialog4::Dialog4(QWidget *parent) :
+another_conclusion_form::another_conclusion_form(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog4)
+    ui(new Ui::another_conclusion_form)
 {
     ui->setupUi(this);
-    d5 = new Dialog5();
+    d5 = new another_answerFORtheQUESTION_form();
 }
 
-Dialog4::~Dialog4()
+another_conclusion_form::~another_conclusion_form()
 {
     delete ui;
 }
 
-void Dialog4::on_pushButton_3_clicked()
+void another_conclusion_form::on_pushButton_3_clicked()
 {
 
 }
 
-void Dialog4::on_Byes_clicked()
+void another_conclusion_form::on_Byes_clicked()
 {
 
 }
 
-void Dialog4::on_Bno_clicked()
+void another_conclusion_form::on_Bno_clicked()
 {
     d5->show();
     this->close();
