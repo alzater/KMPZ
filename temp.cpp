@@ -105,3 +105,44 @@ void temp::on_Binstruments_clicked()
     n4->show();
 }
 
+time:: time()
+{
+    start="";
+    finish="";
+    duration="";
+    period="";
+}
+time:: time (const string & a, const string & b,const string & c,const string & d)
+{
+    start=a;
+    finish=b;
+    duration=c;
+    period=d;
+}
+time:: time (const string & a, const string & b, int & conbinationType)
+{
+//        начало и конец: conbinationType  =1
+//        начало и период: conbinationType =2
+//        конец и период: conbinationType  =3
+    switch (conbinationType)
+    {
+        case 1:
+        {
+            start=a;
+            finish=b;
+            break;
+        }
+        case 2:
+        {
+            start = a;
+            period=b;
+            break;
+        }
+        case 3:
+        {
+            finish = a;
+            period = b;
+            break;
+        }
+    }
+}

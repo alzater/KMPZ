@@ -8,6 +8,35 @@
 using namespace std;
 
 namespace Ui {
+
+class time
+{
+public:
+    time();
+
+    time (const string &, const string &,const string &,const string &);
+
+    time (const string &, const string &, int & );
+
+    ~time()
+    {
+
+    }
+private:
+    string start;
+    string finish;
+    string duration;
+    string period;
+};
+
+class unixtime
+{
+public:
+
+private:
+    double time;
+};
+
 class temp;
 }
 
@@ -42,20 +71,6 @@ private:
     NFmainForm *n4;
 };
 
-class time
-{
-public:
-    string start;
-    string finish;
-    string duration;
-    string period;
-private:
-};
 
-class unixtime
-{
-public:
-    double time;
-};
 
 #endif // TEMP_H
