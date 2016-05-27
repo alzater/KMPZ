@@ -4,38 +4,50 @@
 #include <QDialog>
 #include <nf4.h>
 
-
 using namespace std;
-
-namespace Ui {
 
 class time
 {
-public:
-    time();
+    public:
+        time();
+        time (const string &, const string &,const string &,const string &);
+        time (const string &, const string &, int & );
+        void setTime(const int &, int &);
+        void getTime();
+        ~time()
+        {
 
-    time (const string &, const string &,const string &,const string &);
-
-    time (const string &, const string &, int & );
-
-    ~time()
-    {
-
-    }
-private:
-    string start;
-    string finish;
-    string duration;
-    string period;
+        }
+    private:
+        string _start;
+        string _finish;
+        string _duration;
+        string _period;
+        bool _hasSeconds;
+        bool _hasMinutes;
+        bool _hasHours;
+        bool _hasDays;
+        bool _hasWeeks;
+        bool _hasMonths;
+        bool _hasYears;
+        int _seconds;
+        int _minutes;
+        int _hours;
+        int _days;
+        int _weeks;
+        int _months;
+        int _years;
 };
 
 class unixtime
 {
-public:
+    public:
 
-private:
-    double time;
+    private:
+        double time;
 };
+
+namespace Ui {
 
 class temp;
 }

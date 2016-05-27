@@ -105,21 +105,28 @@ void temp::on_Binstruments_clicked()
     n4->show();
 }
 
-time:: time()
+time::time()
 {
-    start="";
-    finish="";
-    duration="";
-    period="";
+    _start="";
+    _finish="";
+    _duration="";
+    _period="";
+     _hasSeconds=0;
+     _hasMinutes=0;
+     _hasHours=0;
+     _hasDays=0;
+     _hasWeeks=0;
+     _hasMonths=0;
+     _hasYears=0;
 }
-time:: time (const string & a, const string & b,const string & c,const string & d)
+time::time (const string & start, const string & finish,const string & duration,const string & period)
 {
-    start=a;
-    finish=b;
-    duration=c;
-    period=d;
+    _start=start;
+    _finish=finish;
+    _duration=duration;
+    _period=period;
 }
-time:: time (const string & a, const string & b, int & conbinationType)
+time::time (const string & firstVariable, const string & secondVariable, int & conbinationType)
 {
 //        начало и конец: conbinationType  =1
 //        начало и период: conbinationType =2
@@ -128,20 +135,62 @@ time:: time (const string & a, const string & b, int & conbinationType)
     {
         case 1:
         {
-            start=a;
-            finish=b;
+            _start=firstVariable;
+            _finish=secondVariable;
             break;
         }
         case 2:
         {
-            start = a;
-            period=b;
+            _start = firstVariable;
+            _period=secondVariable;
             break;
         }
         case 3:
         {
-            finish = a;
-            period = b;
+            _finish = firstVariable;
+            _period = secondVariable;
+            break;
+        }
+    }
+}
+void time::setTime(const int & value, int & valueType)
+{
+    switch (valueType)
+    {
+        case 1:
+        {
+            _hasMinutes=1;
+            _minutes = value;
+            break;
+        }
+        case 2:
+        {
+            _hasHours=1;
+            _hours = value;
+            break;
+        }
+        case 3:
+        {
+            _hasDays=1;
+            _days = value;
+            break;
+        }
+        case 4:
+        {
+            _hasWeeks=1;
+            _weeks = value;
+            break;
+        }
+        case 5:
+        {
+            _hasMonths=1;
+            _months = value;
+            break;
+        }
+        case 6:
+        {
+            _hasYears=1;
+            _years = value;
             break;
         }
     }
