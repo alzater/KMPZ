@@ -16,6 +16,9 @@ public:
     explicit definition_ability_conclusion_form(QWidget *parent = 0);
     ~definition_ability_conclusion_form();
 
+public:
+    void setQuestionAndAnswer( const QString & que, const QString & ans );
+
 private slots:
     void on_pushButton_clicked();
     void openform();

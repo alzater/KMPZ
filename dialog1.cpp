@@ -36,3 +36,9 @@ void definition_ability_conclusion_form::on_Byes_clicked()
     d2->show();
     this->close();
 }
+
+void definition_ability_conclusion_form::setQuestionAndAnswer(const QString & que, const QString & ans )
+{
+    ui->answer->setText(ans);
+    ui->question->setText(que);
+}
