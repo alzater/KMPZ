@@ -74,7 +74,7 @@ std::string temp::findBegins(std::string str)
 
 std::string temp::findDurance(std::string str)
 {
-    std::vector<std::string> dict({"на протяжении недели", "в течение 10 дней"});
+    std::vector<std::string> dict({"на протяжении недели", "в течение 10 дней", "в течение ночи"});
     for ( const auto & frase : dict )
     {
         if ( str.find(frase) != std::string::npos )

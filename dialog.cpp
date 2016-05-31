@@ -50,8 +50,12 @@ void answer_question_form::on_BtempInfo_clicked()
 
 void answer_question_form::on_Bdalee_clicked()
 {
+
+    d1->question->setText(ui->question->text());
+    d1->answer->setText(ui->answer->text());
     d1->show();
     this->close();
+
 }
 
 void answer_question_form::on_Bvisual_clicked()
