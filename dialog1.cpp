@@ -1,5 +1,6 @@
 #include "dialog1.h"
 #include "ui_dialog1.h"
+#include "dialog.h"
 
 definition_ability_conclusion_form :: definition_ability_conclusion_form(QWidget *parent) :
     QDialog(parent),
@@ -28,12 +29,16 @@ void definition_ability_conclusion_form::openform()
 
 void definition_ability_conclusion_form::on_Bno_clicked()
 {
-
+    answer_question_form *d = new answer_question_form();
+    d->show();
+    this->close();
 }
 
 void definition_ability_conclusion_form::on_Byes_clicked()
 {
     d2->show();
+    d2->que=ui->question->text().toStdString();
+    d2->ans=ui->answer->text().toStdString();
     this->close();
 }
 

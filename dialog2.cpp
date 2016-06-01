@@ -22,5 +22,7 @@ void patient_info_form::on_pushButton_clicked()
 void patient_info_form::on_Binput_clicked()
 {
     d3->show();
+    d3->que=this->que;
+    d3->ans=this->ans;
     this->close();
 }

@@ -26,11 +26,17 @@ void another_answerFORtheQUESTION_form::on_pushButton_3_clicked()
 
 void another_answerFORtheQUESTION_form::on_Bno_clicked()
 {
-
+    this->close();
 }
 
 void another_answerFORtheQUESTION_form::on_Byes_clicked()
 {
     d6->show();
     this->close();
+}
+
+void another_answerFORtheQUESTION_form::setQuestionAndAnswer(const QString &que, const QString &ans)
+{
+    ui->question->setText(que);
+    ui->comboBox_answers->addItem(ans);
 }

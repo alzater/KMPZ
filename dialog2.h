@@ -3,6 +3,8 @@
 
 #include <QDialog>
 #include <dialog3.h>
+#include <QString>
+using namespace std;
 
 namespace Ui {
 class patient_info_form;
@@ -24,6 +26,10 @@ private slots:
 private:
     Ui::patient_info_form *ui;
     conclusion_form *d3;
+
+public:
+    string que;
+    string ans;
 };
 
 #endif // DIALOG2_H

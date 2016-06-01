@@ -19,6 +19,7 @@ conclusion_form::~conclusion_form()
 void conclusion_form::on_pushButton_clicked()
 {
     d4->show();
+    d4->setQuestionAndAnswer(this->que,this->ans);
     this->close();
 }
 

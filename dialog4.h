@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <dialog5.h>
+using namespace std;
 
 
 namespace Ui {
@@ -27,6 +28,9 @@ private slots:
 private:
     Ui::another_conclusion_form *ui;
     another_answerFORtheQUESTION_form *d5;
+
+public:
+    void setQuestionAndAnswer( const string &, const string &);
 
 };
 

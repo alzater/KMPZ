@@ -28,6 +28,9 @@ private slots:
 private:
     Ui::another_answerFORtheQUESTION_form *ui;
     another_answerFORtheQUESTION_form2 *d6;
+
+public:
+    void setQuestionAndAnswer( const QString & que, const QString & ans );
 };
 
 #endif // DIALOG5_H

@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <dialog2.h>
 
+
 namespace Ui {
 class definition_ability_conclusion_form;
 }

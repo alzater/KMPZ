@@ -5,6 +5,7 @@
 #include <dialog4.h>
 #include <nf.h>
 #include <temp.h>
+#include <QString>
 
 namespace Ui {
 class conclusion_form;
@@ -34,6 +35,10 @@ private:
     another_conclusion_form *d4;
     NFquantitativeAnswerForm *n1;
     temp * vr;
+
+public:
+    string que;
+    string ans;
 };
 
 #endif // DIALOG3_H
