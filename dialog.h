@@ -20,6 +20,8 @@ public:
     explicit answer_question_form(QWidget *parent = 0);
     ~answer_question_form();
 
+    void createPZ(const  string & in, const string & out);
+
 private:
     Ui::answer_question_form *ui;
     definition_ability_conclusion_form *d1;

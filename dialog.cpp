@@ -1,5 +1,9 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+#include "fstream"
+#include "vector"
+
+using namespace std;
 
 answer_question_form::answer_question_form(QWidget *parent) :
     QDialog(parent),
@@ -9,6 +13,11 @@ answer_question_form::answer_question_form(QWidget *parent) :
     d1 = new definition_ability_conclusion_form();
     n1 = new NFquantitativeAnswerForm();
     vr = new temp();
+
+    createPZ("C:/Users/Vlad/Desktop/VKR/Objects.xml", "Objects.xml");
+    createPZ("C:/Users/Vlad/Desktop/VKR/Allen2 (2).xml", "Allen2 (2).xml");
+    createPZ("C:/Users/Vlad/Desktop/VKR/TKB2.xml", "TKB2.xml");
+
 }
 
 answer_question_form::~answer_question_form()
@@ -59,4 +68,13 @@ void answer_question_form::on_Bvisual_clicked()
 {
     QString m = ui->question->text();
     ui->label_2->setText(m);
+}
+
+void answer_question_form::createPZ(const string & in, const string & out)
+{
+    ifstream xmlin(in.c_str(),ios::binary);
+    ofstream xmlout(out.c_str(), ios::binary);
+    xmlout << xmlin.rdbuf();
+    xmlout.close();
+    xmlin.close();
 }

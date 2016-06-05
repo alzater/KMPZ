@@ -63,8 +63,8 @@ void temp::on_pushButton_4_clicked()
 
 std::string temp::findBegins(std::string str)
 {
-    std::vector<std::string> dict({"сначало", "вначале", "первым делом", "прежде всего", "с 1го", "С конца 1995 года "
-                                  ,"через 1,5 часа "});
+    std::vector<std::string> dict({"сначала", "вначале", "первым делом", "прежде всего", "с 1го", "С конца 1995 года "
+                                  });
     for ( const auto & frase : dict )
     {
         if ( str.find(frase) != std::string::npos )
@@ -86,7 +86,7 @@ std::string temp::findDurance(std::string str)
 
 std::string temp::findEnds(std::string str)
 {
-    std::vector<std::string> dict({"вконце", "по 3е", "в заключении", "по август 1996"});
+    std::vector<std::string> dict({"вконце", "по 3е", "в заключении", "по август 1996", "через 1,5 часа"});
     for ( const auto & frase : dict )
     {
         if ( str.find(frase) != std::string::npos )
