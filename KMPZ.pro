@@ -41,8 +41,7 @@ HEADERS  += mainwindow.h \
     nf4.h \
     temp.h \
     gap.h \
-    dialog.h \
-    values.h
+    dialog.h
 
 FORMS    += mainwindow.ui \
     dialog1.ui \

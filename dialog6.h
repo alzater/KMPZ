@@ -26,6 +26,8 @@ private slots:
 
     void on_BtempInfo_clicked();
 
+    void on_Bvisual_clicked();
+
 private:
     Ui::another_answerFORtheQUESTION_form2 *ui;
     NFquantitativeAnswerForm *n1;

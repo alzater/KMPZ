@@ -22,11 +22,15 @@ public:
 
     void createPZ(const  string & in, const string & out);
 
+    QString pie[100];
+    int flag=0;
+
 private:
     Ui::answer_question_form *ui;
     definition_ability_conclusion_form *d1;
     NFquantitativeAnswerForm *n1;
     temp *vr;
+
 
 
 private slots:

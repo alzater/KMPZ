@@ -25,6 +25,8 @@ private slots:
 
     void on_Bno_clicked();
 
+    void on_B_visual_clicked();
+
 private:
     Ui::another_conclusion_form *ui;
     another_answerFORtheQUESTION_form *d5;

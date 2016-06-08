@@ -19,6 +19,9 @@ public:
     explicit conclusion_form(QWidget *parent = 0);
     ~conclusion_form();
 
+    QString pie[100];
+    int flag=0;
+
 private slots:
     void on_pushButton_clicked();
 
@@ -29,6 +32,8 @@ private slots:
     void on_Binstruments_clicked();
 
     void on_BtempInfo_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::conclusion_form *ui;

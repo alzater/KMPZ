@@ -1,5 +1,6 @@
 #include "dialog4.h"
 #include "ui_dialog4.h"
+#include "gap.h"
 using namespace std;
 
 another_conclusion_form::another_conclusion_form(QWidget *parent) :
@@ -35,4 +36,10 @@ void another_conclusion_form::setQuestionAndAnswer(const string & que, const str
 {
     ui->lastquestion->setText(que.c_str());
     ui->comboBox_answers->addItem(ans.c_str());
+}
+
+void another_conclusion_form::on_B_visual_clicked()
+{
+    PIEform *pieFormObj = new PIEform();
+    pieFormObj->show();
 }

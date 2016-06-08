@@ -1,5 +1,6 @@
 #include "dialog5.h"
 #include "ui_dialog5.h"
+#include "gap.h"
 
 another_answerFORtheQUESTION_form::another_answerFORtheQUESTION_form(QWidget *parent) :
     QDialog(parent),
@@ -39,4 +40,10 @@ void another_answerFORtheQUESTION_form::setQuestionAndAnswer(const QString &que,
 {
     ui->question->setText(que);
     ui->comboBox_answers->addItem(ans);
+}
+
+void another_answerFORtheQUESTION_form::on_Bvisual_clicked()
+{
+    PIEform *pieFormObj = new PIEform();
+    pieFormObj->show();
 }

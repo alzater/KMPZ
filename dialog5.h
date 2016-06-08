@@ -25,6 +25,8 @@ private slots:
 
     void on_Byes_clicked();
 
+    void on_Bvisual_clicked();
+
 private:
     Ui::another_answerFORtheQUESTION_form *ui;
     another_answerFORtheQUESTION_form2 *d6;

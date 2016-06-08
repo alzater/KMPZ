@@ -1,5 +1,6 @@
 #include "dialog6.h"
 #include "ui_dialog6.h"
+#include "gap.h"
 
 another_answerFORtheQUESTION_form2::another_answerFORtheQUESTION_form2(QWidget *parent) :
     QDialog(parent),
@@ -35,4 +36,10 @@ void another_answerFORtheQUESTION_form2::on_Binstruments_clicked()
 void another_answerFORtheQUESTION_form2::on_BtempInfo_clicked()
 {
    vr->show();
+}
+
+void another_answerFORtheQUESTION_form2::on_Bvisual_clicked()
+{
+    PIEform *pieFormObj = new PIEform();
+    pieFormObj->show();
 }

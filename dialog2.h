@@ -18,10 +18,15 @@ public:
     explicit patient_info_form(QWidget *parent = 0);
     ~patient_info_form();
 
+    QString pie[100];
+    int flag=0;
+
 private slots:
     void on_pushButton_clicked();
 
     void on_Binput_clicked();
+
+    void on_Bvisual_clicked();
 
 private:
     Ui::patient_info_form *ui;

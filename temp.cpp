@@ -1,6 +1,6 @@
 #include "temp.h"
 #include "ui_temp.h"
-
+#include "fstream"
 #include <vector>
 using namespace std;
 
@@ -49,6 +49,9 @@ void temp::init( string question, string answer )
     tmp = findEnds(answer);
     if ( !tmp.empty() )
         ui->finish_answer->setText(tmp.c_str());
+
+    createPZobj(ui->question->text().toStdString(),ui->answer->text().toStdString());
+    createPZint(ui->question->text().toStdString(),ui->answer->text().toStdString(), ui->start_answer->text().toStdString(), ui->finish_answer->text().toStdString());
 }
 
 void temp::on_pushButton_clicked()
@@ -104,6 +107,38 @@ void temp::on_Binput_clicked()
 void temp::on_Binstruments_clicked()
 {
     n4->show();
+}
+
+void temp::createPZobj(string &que, string &ans)
+{
+    ofstream xmloutobj("Objects.xml",ios_base::app);
+    xmloutobj <<"<Object Name=Пациент>" << endl;
+    xmloutobj <<"  <Attributes>" << endl;
+    xmloutobj <<"      <Attribute Value=Пациент."+ que + ">" <<endl;
+    xmloutobj <<"		  <String Value="+ ans+ "/>" << endl;
+    xmloutobj <<"	   </Attribute>" <<endl;
+    xmloutobj <<"  </Attributes>"<<endl;
+    xmloutobj <<"</Object>"<<endl;
+
+}
+
+void temp::createPZint(string &que, string &ans, string &open, string &close)
+{
+    ofstream xmloutint("Allen2.xml",ios_base::app);
+    xmloutint << "    <Interval Name=Пациент."+que+"("+ans+")>" <<endl;
+    xmloutint << "      <Open>" << endl;
+    xmloutint << "        <EqOp Value=eq>" <<endl;
+    xmloutint << "          <Attribute Value=Пациент.Симптомы.Срок_давности />" << endl;
+    xmloutint << "          <String Value="+open+ " />" << endl;
+    xmloutint << "        </EqOp>" <<endl;
+    xmloutint << "      </Open>" << endl;
+    xmloutint << "      <Close>" << endl;
+    xmloutint << "        <EqOp Value=eq>" <<endl;
+    xmloutint << "          <Attribute Value=Пациент.Симптомы.Срок_давности />" << endl;
+    xmloutint << "          <String Value="+close+ " />" << endl;
+    xmloutint << "        </EqOp>" <<endl;
+    xmloutint << "      </Close>" << endl;
+    xmloutint << "    </Interval>" << endl;
 }
 
 time::time()
