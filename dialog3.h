@@ -22,6 +22,8 @@ public:
     QString pie[100];
     int flag=0;
 
+     void copyPZ(const  string & in, const string & out);
+
 private slots:
     void on_pushButton_clicked();
 

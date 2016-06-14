@@ -15,9 +15,9 @@ answer_question_form::answer_question_form(QWidget *parent) :
     n1 = new NFquantitativeAnswerForm();
     vr = new temp();
 
-//    createPZ("C:/Users/Vlad/Desktop/VKR/Objects.xml", "Objects.xml");
+    createPZ("C:/Users/Vlad/Desktop/VKR/Objects.xml", "Objects.xml");
 //    createPZ("C:/Users/Vlad/Desktop/VKR/Allen2 (2).xml", "Allen2 (2).xml");
-    createPZ("C:/Users/Vlad/Desktop/VKR/TKB2.xml", "TKB2.xml");
+//    createPZ("C:/Users/Vlad/Desktop/VKR/TKB2.xml", "TKB2.xml");
 
 
 }
@@ -86,7 +86,7 @@ void answer_question_form::on_Bvisual_clicked()
 void answer_question_form::createPZ(const string & in, const string & out)
 {
     ifstream xmlin(in.c_str(),ios::binary);
-    ofstream xmlout(out.c_str(), ios::binary);
+    ofstream xmlout(out.c_str(), ios::app);
     xmlout << xmlin.rdbuf();
     xmlout.close();
     xmlin.close();

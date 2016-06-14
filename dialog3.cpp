@@ -28,6 +28,15 @@ void conclusion_form::on_pushButton_clicked()
     d4->show();
     d4->setQuestionAndAnswer(this->que,this->ans);
     this->close();
+
+    ofstream xmlouttkb("TKBnew.xml",ios_base::app);
+    ofstream xmloutobj("obj.xml",ios_base::app);
+    ofstream xmloutrul("rules.xml",ios_base::app);
+
+    xmloutrul << endl << "          <methods/>" << endl << "        </class>" << endl << "  </classes>" << endl << "</knowledge-base>";
+
+    copyPZ("obj.xml","TKBnew.xml" );
+    copyPZ("rules.xml","TKBnew.xml" );
 }
 
 void conclusion_form::on_pushButton_4_clicked()
@@ -58,4 +67,11 @@ void conclusion_form::on_pushButton_2_clicked()
         pieFormObj->createPIE(pie[0], pie[1], pie[2], pie[3], pie[4], pie[5], pie[11]);
 
     pieFormObj->show();
+}
+void conclusion_form::copyPZ(const string &in, const string &out)
+{ifstream xmlin(in.c_str(),ios::binary);
+    ofstream xmlout(out.c_str(), ios::app);
+    xmlout << xmlin.rdbuf();
+    xmlout.close();
+    xmlin.close();
 }

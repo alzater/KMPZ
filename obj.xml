@@ -1,0 +1,6 @@
+﻿	
+	</types>
+		<classes>
+			<class id="Класс1" desc="Описание">
+				<properties>
+                  <property id="Симптом7" type="Замечали приступы регулярных сжимающих болей за грудиной и в области сердца" desc="описание" source="inferred"/>

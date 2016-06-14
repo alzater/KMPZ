@@ -63,6 +63,7 @@ public:
     void init( std::string question, std::string answer );
     void createPZobj(string & que, string &  ans);
     void createPZint(string & que, string &  ans, string & open, string & close);
+    void createTKBnew (string & que, string &  ans, string & open, string & close);
 
 signals:
     void closed();

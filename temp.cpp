@@ -2,6 +2,7 @@
 #include "ui_temp.h"
 #include "fstream"
 #include <vector>
+#include "ctime"
 using namespace std;
 
 temp::temp(QWidget *parent) :
@@ -50,8 +51,9 @@ void temp::init( string question, string answer )
     if ( !tmp.empty() )
         ui->finish_answer->setText(tmp.c_str());
 
-    createPZobj(ui->question->text().toStdString(),ui->answer->text().toStdString());
+//    createPZobj(ui->question->text().toStdString(),ui->answer->text().toStdString());
     createPZint(ui->question->text().toStdString(),ui->answer->text().toStdString(), ui->start_answer->text().toStdString(), ui->finish_answer->text().toStdString());
+    createTKBnew(ui->question->text().toStdString(),ui->answer->text().toStdString(), ui->start_answer->text().toStdString(), ui->finish_answer->text().toStdString());
 }
 
 void temp::on_pushButton_clicked()
@@ -89,7 +91,7 @@ std::string temp::findDurance(std::string str)
 
 std::string temp::findEnds(std::string str)
 {
-    std::vector<std::string> dict({"вконце", "по 3е", "в заключении", "по август 1996", "через 1,5 часа"});
+    std::vector<std::string> dict({"вконце", "по 3е", "в заключении", "по август 1997", "через 1,5 часа"});
     for ( const auto & frase : dict )
     {
         if ( str.find(frase) != std::string::npos )
@@ -125,20 +127,77 @@ void temp::createPZobj(string &que, string &ans)
 void temp::createPZint(string &que, string &ans, string &open, string &close)
 {
     ofstream xmloutint("Allen2.xml",ios_base::app);
-    xmloutint << "    <Interval Name=Пациент."+que+"("+ans+")>" <<endl;
+    xmloutint << "    <Interval Name=\"Пациент."+que+"("+ans+")\">" <<endl;
     xmloutint << "      <Open>" << endl;
-    xmloutint << "        <EqOp Value=eq>" <<endl;
-    xmloutint << "          <Attribute Value=Пациент.Симптомы.Срок_давности />" << endl;
-    xmloutint << "          <String Value="+open+ " />" << endl;
+    xmloutint << "        <EqOp Value=\"eq\">" <<endl;
+    xmloutint << "          <Attribute Value=\"Пациент.Симптомы_cрок_давности\" />" << endl;
+    xmloutint << "          <String Value=\""+open+ "\" />" << endl;
     xmloutint << "        </EqOp>" <<endl;
     xmloutint << "      </Open>" << endl;
     xmloutint << "      <Close>" << endl;
-    xmloutint << "        <EqOp Value=eq>" <<endl;
-    xmloutint << "          <Attribute Value=Пациент.Симптомы.Срок_давности />" << endl;
-    xmloutint << "          <String Value="+close+ " />" << endl;
+    xmloutint << "        <EqOp Value=\"eq\">" <<endl;
+    xmloutint << "          <Attribute Value=\"Пациент.Симптомы_cрок_давности\" />" << endl;
+    xmloutint << "          <String Value=\""+close+ "\" />" << endl;
     xmloutint << "        </EqOp>" <<endl;
     xmloutint << "      </Close>" << endl;
     xmloutint << "    </Interval>" << endl;
+}
+
+void temp::createTKBnew(string &que, string &ans, string &open, string &close)
+{
+    ofstream xmlouttkb("TKBnew.xml",ios_base::app);
+    ofstream xmloutobj("obj.xml",ios_base::app);
+    ofstream xmloutrul("rules.xml",ios_base::app);
+    srand(time(0));
+    int random = rand();
+    random = random % 100;
+
+    xmlouttkb << endl << "    <type id=\"" ;
+    xmlouttkb << que;
+    xmlouttkb <<"\" meta=\"string\" desc=\"описание\">" <<endl ;
+    xmlouttkb << "        <value>" + ans + "</value>" << endl;
+    xmlouttkb << "    </type>" ;
+
+    random = random % 10;
+    xmloutobj << endl << "                  <property id=\"Симптом";
+    xmloutobj << random;
+    xmloutobj << "\" type=\"";
+    xmloutobj << que;
+    xmloutobj << "\" desc=\"описание\" source=\"inferred\"/>";
+
+
+    xmloutrul << endl << "              <rule id=\"";
+    xmloutrul <<             random;
+    xmloutrul << "\" meta=\"simple\" desc=\"22\">" << endl;
+    xmloutrul << "                  <condition>" << endl << "                   <and>" << endl << "                      <IntRel Value=\"e\">" << endl;
+    xmloutrul << "                          <Interval Name=\"Пациент.Симптом";
+    xmloutrul << random;
+    xmloutrul << "("+ans+")\">" <<endl;
+    xmloutrul << "                          <Interval Name=\"Пациент.Симптом";
+    xmloutrul << random;
+    xmloutrul << "("+ans+")\">" <<endl;
+    xmloutrul << "                      </IntRel>" << endl;
+    xmloutrul << "                      <eq>" << endl;
+    xmloutrul << "                          <ref id=\"Пациент\">" << endl;
+    xmloutrul << "                              <ref id=\"Симптом";
+    xmloutrul << random;
+    xmloutrul << "\">" << endl;
+    xmloutrul << "                          </ref>" << endl;
+    xmloutrul << "                          <value>" + ans + "</value>" << endl;
+    xmloutrul << "                          <with belief=\"50\" probability=\"100\" accuracy=\"0\"/>" << endl;
+    xmloutrul << "                      </eq>" << endl;
+    xmloutrul << "                    </and>" << endl;
+    xmloutrul << "                  </condition>" << endl;
+    xmloutrul << "                  <action>" << endl;
+    xmloutrul << "                      <assign>" << endl;
+    xmloutrul << "                          <ref id=\"Пациент\">" << endl;
+    xmloutrul << "                              <ref id=\"Подозрение\">" << endl;
+    xmloutrul << "                          </ref>" << endl;
+    xmloutrul << "                          <value>" + ans + "</value>" << endl;
+    xmloutrul << "                          <with belief=\"50\" probability=\"100\" accuracy=\"0\"/>" << endl;
+    xmloutrul << "                      </assign>" << endl;
+    xmloutrul << "                  </action>" << endl;
+    xmloutrul << "              </rule>";
 }
 
 time::time()

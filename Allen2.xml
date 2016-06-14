@@ -1,0 +1,672 @@
+    <Interval Name=Пациент.-	На что жалуетесь?(-	На боли за грудиной и в области сердца сжимающего характера, и иррадиирующие в левое плечо, руку, под лопатку, иногда в область ключицы, возникающие без четкой связи с физической нагрузкой и продолжающиеся в течение ночи.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.-	Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.-	Принимали лекарства?(-	Принял таблетку нитроглицерина под язык, боль не уменьшилась, через 1,5 часа боль приняла жгучий характер. )>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=через 1,5 часа />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.1(2)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.3(4)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.()>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value= />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.балбалбла(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name=Пациент.блаблабла(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)>
+      <Open>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=С конца 1995 года  />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value=eq>
+          <Attribute Value=Пациент.Симптомы.Срок_давности />
+          <String Value=по август 1996 />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.()">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.()">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.-	Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="по август 1996" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.-	Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(-	С конца 1995 года по август 1996 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="по август 1996" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.zzzzzz(qqqqqqq)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.некрасов(пушкин)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.некрасов(пушкин)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.чо как, тварь?(-	С конца 1995 года по август 1997 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(С конца 1995 года по август 1997 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="по август 1997" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(С конца 1995 года по август 1997 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы.Срок_давности" />
+          <String Value="по август 1997" />
+        </EqOp>
+      </Close>
+    </Interval>
+    <Interval Name="Пациент.Замечали приступы регулярных сжимающих болей за грудиной и в области сердца(С конца 1995 года по август 1997 года отмечал регулярные приступы сжимающих болей за грудиной и в области сердца, иррадиирующие в правую руку, лопатку.)">
+      <Open>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы_cрок_давности" />
+          <String Value="С конца 1995 года " />
+        </EqOp>
+      </Open>
+      <Close>
+        <EqOp Value="eq">
+          <Attribute Value="Пациент.Симптомы_cрок_давности" />
+          <String Value="по август 1997" />
+        </EqOp>
+      </Close>
+    </Interval>
