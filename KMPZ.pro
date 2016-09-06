@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     nf3.cpp \
     nf4.cpp \
     temp.cpp \
-    gap.cpp
+    gap.cpp \
+    model.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
@@ -41,7 +42,8 @@ HEADERS  += mainwindow.h \
     nf3.h \
     nf4.h \
     temp.h \
-    gap.h
+    gap.h \
+    model.h
 
 FORMS    += mainwindow.ui \
     dialog1.ui \

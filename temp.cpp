@@ -1,6 +1,10 @@
 #include "temp.h"
 #include "ui_temp.h"
 
+#include "model.h"
+
+extern Model model;
+
 #include <vector>
 
 temp::temp(QWidget *parent) :
@@ -8,6 +12,9 @@ temp::temp(QWidget *parent) :
     ui(new Ui::temp)
 {
     ui->setupUi(this);
+
+    model.addTime("", "", "", "", "", "");
+
      QPushButton *but_1 = new QPushButton(this);
     connect(but_1, &QPushButton::clicked, this, &temp::on_pushButton_clicked);
     n4= new nf4();
@@ -95,6 +102,14 @@ std::string temp::findEnds(std::string str)
 
 void temp::on_Binput_clicked()
 {
+    model.times.back().questStart = ui->start_question->text().toStdString();
+    model.times.back().questEnd = ui->finish_question->text().toStdString();
+    model.times.back().questDuration = ui->duration_question->text().toStdString();
+
+    model.times.back().ansStart = ui->start_answer->text().toStdString();
+    model.times.back().ansEnd = ui->finish_answer->text().toStdString();
+    model.times.back().ansDuration = ui->duration_answer->text().toStdString();
+
     emit closed();
     this->close();
 }
