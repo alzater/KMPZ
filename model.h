@@ -14,6 +14,10 @@ struct STime
     string questStart;
     string questEnd;
     string questDuration;
+    string ansStartName;
+    string ansEndName;
+    string questStartName;
+    string questEndName;
 };
 
 class Model

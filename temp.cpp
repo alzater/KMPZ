@@ -118,3 +118,8 @@ void temp::on_Binstruments_clicked()
 {
     n4->show();
 }
+
+void temp::on_BtempOs_clicked()
+{
+   model.genXML();
+}

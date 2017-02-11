@@ -31,6 +31,8 @@ private slots:
 
     void on_Binstruments_clicked();
 
+    void on_BtempOs_clicked();
+
 private:
     std::string findBegins(std::string str);
     std::string findEnds(std::string str);

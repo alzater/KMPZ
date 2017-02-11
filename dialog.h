@@ -2,7 +2,7 @@
 #define DIALOG_H
 
 #include <QDialog>
-#include <dialog1.h>
+#include <dialog_conclusion.h>
 #include <nf.h>
 #include <temp.h>
 
@@ -22,20 +22,16 @@ public:
 
 private:
     Ui::Dialog *ui;
-    Dialog1 *d1;
+    DialogConclusion *d1;
     nf *n1;
     temp *vr;
 
 
 private slots:
-        void on_pushButton_clicked();
-        void on_pushButton_3_clicked();
-        void on_pushButton_4_clicked();
-        void on_pushButton_2_clicked();
-        void on_Binstruments_clicked();
-        void on_BtempInfo_clicked();
-        void on_Bdalee_clicked();
-        void on_Bvisual_clicked();
+    void on_bTempInfo_clicked();
+    void on_bNext_clicked();
+    void on_bVisual_clicked();
+    void on_bInstruments_clicked();
 };
 
 #endif // DIALOG_H

@@ -15,8 +15,6 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
-    dialog1.cpp \
-    dialog2.cpp \
     dialog3.cpp \
     dialog4.cpp \
     dialog5.cpp \
@@ -27,12 +25,14 @@ SOURCES += main.cpp\
     nf4.cpp \
     temp.cpp \
     gap.cpp \
-    model.cpp
+    model.cpp \
+    dialog_conclusion.cpp \
+    dialog_clearifying_information.cpp \
+    pz_converter.cpp \
+    pz.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    dialog1.h \
-    dialog2.h \
     dialog3.h \
     dialog4.h \
     dialog5.h \
@@ -43,11 +43,17 @@ HEADERS  += mainwindow.h \
     nf4.h \
     temp.h \
     gap.h \
-    model.h
+    model.h \
+    rapidxml/rapidxml.hpp \
+    rapidxml/rapidxml_iterators.hpp \
+    rapidxml/rapidxml_print.hpp \
+    rapidxml/rapidxml_utils.hpp \
+    dialog_conclusion.h \
+    dialog_clearifying_information.h \
+    pz_converter.h \
+    pz.h
 
 FORMS    += mainwindow.ui \
-    dialog1.ui \
-    dialog2.ui \
     dialog3.ui \
     dialog4.ui \
     dialog5.ui \
@@ -58,4 +64,6 @@ FORMS    += mainwindow.ui \
     nf4.ui \
     temp.ui \
     gap.ui \
-    dialog.ui
+    dialog.ui \
+    dialog_conslusion.ui \
+    dialog_clearifying_information.ui
