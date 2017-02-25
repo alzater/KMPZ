@@ -14,59 +14,59 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    dialog.cpp \
-    dialog3.cpp \
-    dialog4.cpp \
-    dialog5.cpp \
-    dialog6.cpp \
-    nf.cpp \
-    nf2.cpp \
-    nf3.cpp \
-    nf4.cpp \
-    temp.cpp \
-    gap.cpp \
-    model.cpp \
-    dialog_conclusion.cpp \
-    dialog_clearifying_information.cpp \
-    pz_converter.cpp \
-    pz.cpp \
-    startdialog.cpp
+    interviewing_of_experts/dialogs/dialog.cpp \
+    interviewing_of_experts/dialogs/dialog3.cpp \
+    interviewing_of_experts/dialogs/dialog4.cpp \
+    interviewing_of_experts/dialogs/dialog5.cpp \
+    interviewing_of_experts/dialogs/dialog6.cpp \
+    interviewing_of_experts/dialogs/dialog_clearifying_information.cpp \
+    interviewing_of_experts/dialogs/dialog_conclusion.cpp \
+    interviewing_of_experts/dialogs/gap.cpp \
+    interviewing_of_experts/dialogs/nf.cpp \
+    interviewing_of_experts/dialogs/nf2.cpp \
+    interviewing_of_experts/dialogs/nf3.cpp \
+    interviewing_of_experts/dialogs/nf4.cpp \
+    interviewing_of_experts/dialogs/startdialog.cpp \
+    interviewing_of_experts/dialogs/temp.cpp \
+    interviewing_of_experts/model/model.cpp \
+    interviewing_of_experts/model/pz.cpp \
+    interviewing_of_experts/model/pz_converter.cpp
 
 HEADERS  += mainwindow.h \
-    dialog.h \
-    dialog3.h \
-    dialog4.h \
-    dialog5.h \
-    dialog6.h \
-    nf.h \
-    nf2.h \
-    nf3.h \
-    nf4.h \
-    temp.h \
-    gap.h \
-    model.h \
-    dialog_conclusion.h \
-    dialog_clearifying_information.h \
-    pz_converter.h \
-    pz.h \
-    startdialog.h \
     libs/rapidxml/rapidxml.hpp \
     libs/rapidxml/rapidxml_iterators.hpp \
     libs/rapidxml/rapidxml_print.hpp \
-    libs/rapidxml/rapidxml_utils.hpp
+    libs/rapidxml/rapidxml_utils.hpp \
+    interviewing_of_experts/dialogs/dialog.h \
+    interviewing_of_experts/dialogs/dialog3.h \
+    interviewing_of_experts/dialogs/dialog4.h \
+    interviewing_of_experts/dialogs/dialog5.h \
+    interviewing_of_experts/dialogs/dialog6.h \
+    interviewing_of_experts/dialogs/dialog_clearifying_information.h \
+    interviewing_of_experts/dialogs/dialog_conclusion.h \
+    interviewing_of_experts/dialogs/gap.h \
+    interviewing_of_experts/dialogs/nf.h \
+    interviewing_of_experts/dialogs/nf2.h \
+    interviewing_of_experts/dialogs/nf3.h \
+    interviewing_of_experts/dialogs/nf4.h \
+    interviewing_of_experts/dialogs/startdialog.h \
+    interviewing_of_experts/dialogs/temp.h \
+    interviewing_of_experts/model/model.h \
+    interviewing_of_experts/model/pz.h \
+    interviewing_of_experts/model/pz_converter.h
 
 FORMS    += mainwindow.ui \
-    dialog3.ui \
-    dialog4.ui \
-    dialog5.ui \
-    dialog6.ui \
-    nf.ui \
-    nf2.ui \
-    nf3.ui \
-    nf4.ui \
-    temp.ui \
-    gap.ui \
-    dialog.ui \
-    dialog_conslusion.ui \
-    dialog_clearifying_information.ui \
-    startdialog.ui
+    interviewing_of_experts/dialogs/startdialog.ui \
+    interviewing_of_experts/dialogs/gap.ui \
+    interviewing_of_experts/dialogs/dialog_conslusion.ui \
+    interviewing_of_experts/dialogs/temp.ui \
+    interviewing_of_experts/dialogs/nf4.ui \
+    interviewing_of_experts/dialogs/nf3.ui \
+    interviewing_of_experts/dialogs/nf2.ui \
+    interviewing_of_experts/dialogs/nf.ui \
+    interviewing_of_experts/dialogs/dialog_clearifying_information.ui \
+    interviewing_of_experts/dialogs/dialog6.ui \
+    interviewing_of_experts/dialogs/dialog5.ui \
+    interviewing_of_experts/dialogs/dialog4.ui \
+    interviewing_of_experts/dialogs/dialog3.ui \
+    interviewing_of_experts/dialogs/dialog.ui
