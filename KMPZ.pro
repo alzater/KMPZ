@@ -30,8 +30,7 @@ SOURCES += main.cpp\
     dialog_clearifying_information.cpp \
     pz_converter.cpp \
     pz.cpp \
-    startdialog.cpp \
-    dialogn.cpp
+    startdialog.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
@@ -46,16 +45,15 @@ HEADERS  += mainwindow.h \
     temp.h \
     gap.h \
     model.h \
-    rapidxml/rapidxml.hpp \
-    rapidxml/rapidxml_iterators.hpp \
-    rapidxml/rapidxml_print.hpp \
-    rapidxml/rapidxml_utils.hpp \
     dialog_conclusion.h \
     dialog_clearifying_information.h \
     pz_converter.h \
     pz.h \
     startdialog.h \
-    dialogn.h
+    libs/rapidxml/rapidxml.hpp \
+    libs/rapidxml/rapidxml_iterators.hpp \
+    libs/rapidxml/rapidxml_print.hpp \
+    libs/rapidxml/rapidxml_utils.hpp
 
 FORMS    += mainwindow.ui \
     dialog3.ui \
