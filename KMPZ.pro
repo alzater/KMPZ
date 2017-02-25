@@ -29,7 +29,9 @@ SOURCES += main.cpp\
     dialog_conclusion.cpp \
     dialog_clearifying_information.cpp \
     pz_converter.cpp \
-    pz.cpp
+    pz.cpp \
+    startdialog.cpp \
+    dialogn.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
@@ -51,7 +53,9 @@ HEADERS  += mainwindow.h \
     dialog_conclusion.h \
     dialog_clearifying_information.h \
     pz_converter.h \
-    pz.h
+    pz.h \
+    startdialog.h \
+    dialogn.h
 
 FORMS    += mainwindow.ui \
     dialog3.ui \
@@ -66,4 +70,5 @@ FORMS    += mainwindow.ui \
     gap.ui \
     dialog.ui \
     dialog_conslusion.ui \
-    dialog_clearifying_information.ui
+    dialog_clearifying_information.ui \
+    startdialog.ui
