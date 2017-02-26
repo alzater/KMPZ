@@ -26,7 +26,6 @@ SOURCES += main.cpp\
     interviewing_of_experts/dialogs/nf2.cpp \
     interviewing_of_experts/dialogs/nf3.cpp \
     interviewing_of_experts/dialogs/nf4.cpp \
-    interviewing_of_experts/dialogs/startdialog.cpp \
     interviewing_of_experts/dialogs/temp.cpp \
     interviewing_of_experts/model/model.cpp \
     interviewing_of_experts/model/pz.cpp \
@@ -50,7 +49,6 @@ HEADERS  += mainwindow.h \
     interviewing_of_experts/dialogs/nf2.h \
     interviewing_of_experts/dialogs/nf3.h \
     interviewing_of_experts/dialogs/nf4.h \
-    interviewing_of_experts/dialogs/startdialog.h \
     interviewing_of_experts/dialogs/temp.h \
     interviewing_of_experts/model/model.h \
     interviewing_of_experts/model/pz.h \
@@ -58,7 +56,6 @@ HEADERS  += mainwindow.h \
     interviewing_of_experts/dialogs/task_type_definition_dialog.h
 
 FORMS    += mainwindow.ui \
-    interviewing_of_experts/dialogs/startdialog.ui \
     interviewing_of_experts/dialogs/gap.ui \
     interviewing_of_experts/dialogs/dialog_conslusion.ui \
     interviewing_of_experts/dialogs/temp.ui \

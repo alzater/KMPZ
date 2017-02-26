@@ -1,15 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "interviewing_of_experts/model/model.h"
 
-Model model;
+#include "interviewing_of_experts/dialogs/task_type_definition_dialog.h"
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
 
-    ui(new Ui::MainWindow)
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -17,22 +17,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_expertsInterviewingButton_clicked()
 {
-
-}
-
-void MainWindow::on_pushButton_2_clicked()
-{
-
-}
-
-void MainWindow::on_BnewWords_clicked()
-{
-
-}
-
-void MainWindow::on_Bdalee_clicked()
-{
+    TaskTypeDefinitionDialog* taskTypeDefinitionDialog = new TaskTypeDefinitionDialog;
+    taskTypeDefinitionDialog->show();
     this->close();
 }

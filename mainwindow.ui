@@ -60,7 +60,7 @@
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="knowladgeBaseVerififcationButton">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -73,7 +73,7 @@
      <string>Верификация</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="interviewingProtocolsAnalysisButton">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -87,7 +87,7 @@
 интервьюирования</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="expertsInterviewingButton">
     <property name="geometry">
      <rect>
       <x>190</x>
