@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     interviewing_of_experts/dialogs/temp.cpp \
     interviewing_of_experts/model/model.cpp \
     interviewing_of_experts/model/pz.cpp \
-    interviewing_of_experts/model/pz_converter.cpp
+    interviewing_of_experts/model/pz_converter.cpp \
+    interviewing_of_experts/dialogs/task_type_definition_dialog.cpp
 
 HEADERS  += mainwindow.h \
     libs/rapidxml/rapidxml.hpp \
@@ -53,7 +54,8 @@ HEADERS  += mainwindow.h \
     interviewing_of_experts/dialogs/temp.h \
     interviewing_of_experts/model/model.h \
     interviewing_of_experts/model/pz.h \
-    interviewing_of_experts/model/pz_converter.h
+    interviewing_of_experts/model/pz_converter.h \
+    interviewing_of_experts/dialogs/task_type_definition_dialog.h
 
 FORMS    += mainwindow.ui \
     interviewing_of_experts/dialogs/startdialog.ui \
@@ -69,4 +71,5 @@ FORMS    += mainwindow.ui \
     interviewing_of_experts/dialogs/dialog5.ui \
     interviewing_of_experts/dialogs/dialog4.ui \
     interviewing_of_experts/dialogs/dialog3.ui \
-    interviewing_of_experts/dialogs/dialog.ui
+    interviewing_of_experts/dialogs/dialog.ui \
+    interviewing_of_experts/dialogs/task_type_definition_dialog.ui

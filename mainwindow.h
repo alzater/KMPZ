@@ -2,8 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <dialog.h>
-
 
 namespace Ui {
 class MainWindow;
@@ -28,10 +26,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Dialog *d;
-
-
-
 };
 
 #endif // MAINWINDOW_H

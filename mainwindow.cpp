@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "model.h"
+#include "interviewing_of_experts/model/model.h"
 
 Model model;
 
@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    d = new Dialog();
 }
 
 MainWindow::~MainWindow()
@@ -35,6 +34,5 @@ void MainWindow::on_BnewWords_clicked()
 
 void MainWindow::on_Bdalee_clicked()
 {
-    d->show();
     this->close();
 }

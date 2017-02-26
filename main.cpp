@@ -2,8 +2,8 @@
 #include <QApplication>
 #include <dialog.h>
 
-#include "pz.h"
-#include "pz_converter.h"
+#include "interviewing_of_experts/model/pz.h"
+#include "interviewing_of_experts/model/pz_converter.h"
 #include <iostream>
 #include <vector>
 #include <regex>
