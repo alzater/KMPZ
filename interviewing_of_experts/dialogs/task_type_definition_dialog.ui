@@ -10,6 +10,11 @@
     <height>343</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -17,9 +22,9 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>20</y>
+     <y>50</y>
      <width>611</width>
-     <height>201</height>
+     <height>231</height>
     </rect>
    </property>
   </widget>
@@ -27,8 +32,8 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>230</y>
-     <width>75</width>
+     <y>300</y>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -39,9 +44,9 @@
   <widget class="QPushButton" name="BnewWords">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>230</y>
-     <width>83</width>
+     <x>450</x>
+     <y>300</y>
+     <width>121</width>
      <height>23</height>
     </rect>
    </property>
@@ -52,10 +57,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>0</y>
-     <width>359</width>
-     <height>13</height>
+     <x>70</x>
+     <y>20</y>
+     <width>501</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
